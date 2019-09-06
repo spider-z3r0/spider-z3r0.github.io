@@ -1,9 +1,9 @@
-Title: My first post
+Title: Welcome
 Date: 2019-09-06 20:51
 Category: misc
 Tags: first, misc
-Slug: My-first-post
-Authors: Your name
-Summary: What does your post talk about? Write here.
+Slug: Welcome
+Authors: Spider
+Summary: Don't call it an abstract. 
 
 This is the *first post* from my Pelican blog. **YAY!**
