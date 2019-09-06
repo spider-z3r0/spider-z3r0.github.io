@@ -37,6 +37,6 @@ DEFAULT_PAGINATION = 10
 #Path for images
 STATIC_PATHS = ['images']
 
-THEME = "/Users/kevinomalley/pelican-themes/alchemy"
+THEME = "/Users/kevinomalley/pelican-themes/nest"
 
 
