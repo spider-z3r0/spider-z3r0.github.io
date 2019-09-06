@@ -37,6 +37,6 @@ DEFAULT_PAGINATION = 10
 #Path for images
 STATIC_PATHS = ['images']
 
-THEME = "/Users/kevinomalley/pelican-themes/clean-blog"
+THEME = "/Users/kevinomalley/pelican-themes/blue-penguin"
 
 
