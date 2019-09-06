@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Spider-z3r0'
-SITENAME = 'Psython - Learning Psychology and Python'
+SITENAME = 'Psython'
 SITEURL = ''
 
 PATH = 'content'
