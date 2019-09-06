@@ -4,6 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Spider-z3r0'
 SITENAME = 'Psython'
+SITESUBTITLE = 'Psychology, Python, PhD'
 SITEURL = ''
 
 PATH = 'content'
