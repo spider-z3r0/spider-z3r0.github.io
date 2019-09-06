@@ -1,7 +1,7 @@
 Title: Welcome
 Date: 2019-09-06 20:51
-Category: misc
-Tags: first, misc
+Category: Home
+Tags: first, Home
 Slug: Welcome
 Authors: Spider
 Summary: Don't call it an abstract. 

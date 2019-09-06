@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Spider-z3r0'
-SITENAME = 'Psython'
+SITENAME = 'Psython - Adventures in Psychology, Python & Post-Graduate life'
 SITEURL = ''
 
 PATH = 'content'
@@ -37,6 +37,6 @@ DEFAULT_PAGINATION = 10
 #Path for images
 STATIC_PATHS = ['images']
 
-THEME = "/Users/kevinomalley/pelican-themes/blue-penguin"
+THEME = "/Users/kevinomalley/pelican-themes/blueidea"
 
 
