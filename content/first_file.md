@@ -1,4 +1,4 @@
-Title: Welcome
+Title: Welcome Traveller!
 Date: 2019-09-06 20:51
 Category: Home
 Tags: Home, first
@@ -6,7 +6,7 @@ Slug: Welcome
 Authors: Spider
 Summary: Don't call it an abstract. 
 
-#Welcome Traveller!
+
 
 My name is Kev and I'm a PhD student in the social sciences. I won't bore you with the details of my life but I will say that you are welcome and I hope you find something here that is useful to you. 
 
@@ -23,9 +23,9 @@ The short version is, the more I worked with **SPSS** the more frustrated I beca
 
 So I completed a few data projects with python, wrote a few scripts, read a few books and the people around me were pretty impressed by the results, but, I kept coming up against the same issue time and again...
 
-	##"I'm not technical enough to do that, it's cool though..."
+###"I'm not technical enough to do that, it's cool though..."
 
-Now, I know these people, they are much smarter than me, more diligent, and they can all spell betterer, so I decided there must be something I can do to help that isn't another long rant about how much better things are with just a few lines of code inder your belt. 
+Now, I know these people, they are much smarter than me, more diligent, and they can all spell betterer, so I decided there must be something I can do to help that isn't another long rant about how much better things are with just a few lines of code inder your belt. If you can write a letter, or a post-it or an *academic paper* you can definitely write code. 
 
 
 ##Thus, this site.
