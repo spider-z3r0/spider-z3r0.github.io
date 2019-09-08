@@ -11,7 +11,7 @@
 &lt;p&gt;These programs are called &lt;a href="https://www.dummies.com/programming/java/what-is-an-integrated-development-environment/"&gt;&lt;strong&gt;Integrated Development Environments&lt;/strong&gt;&lt;/a&gt;, but don't worry about that right now. The short version is they let you work on projects without needing to have loads of windows open on your computer. &lt;/p&gt;
 &lt;p&gt;Once you have installed anaconda, open it up and you'll be presented with a grid of different "apps" (that's not the right term but we're gonna use it here) laid out in a grid. Now, you're free to use any of these apps and there's loads of reason to use each one, but I'm going to work in spyder because... well just because. I was advised to use spyder when I started out, and although I've moved on since, I'm advising you to do the same. &lt;/p&gt;
 &lt;p&gt;So click "launch" on the spyder app and away we go... &lt;/p&gt;
-&lt;p&gt;![][Spyder.png]&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Alt Text" src="/images/Spyder.png"&gt;&lt;/p&gt;
 &lt;p&gt;Spyder consists of 3 seperate panes:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;The text editor&lt;/li&gt;
