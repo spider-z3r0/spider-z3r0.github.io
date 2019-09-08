@@ -21,9 +21,9 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),)
+LINKS = (('Git', 'https://github.com/spider-z3r0/'),
+         ('Bandcamp', 'https://greatinsmalldoses.bandcamp.com/'),
+         ('Soundcloud', 'https://soundcloud.com/great-in-small-doses'),)
 
 # Social widget
 # SOCIAL = (('You can add links in your config file', '#'),
