@@ -9,7 +9,7 @@
 &lt;p&gt;So while I understand that people find learning to code to be intimidating, I want to ask you to see yourself as the hero of this journey. 
  Not like the barbarian, more like the wizard. You will learn what you, get better and better, and slay all kinds of Dragons.  &lt;/p&gt;
 &lt;p&gt;I dunno about you, but I'd rather be using tools and bending things to my will... I mean... being proactive. &lt;/p&gt;
-&lt;h2&gt;So buckle up traveler and lets get to gettin'.&lt;/h2&gt;</content><category term="Python"></category><category term="introduction"></category><category term="mindset"></category></entry><entry><title>Actually Starting</title><link href="/python_start.html" rel="alternate"></link><published>2019-09-08T20:00:00+01:00</published><updated>2019-09-08T20:00:00+01:00</updated><author><name>Spider</name></author><id>tag:None,2019-09-08:/python_start.html</id><summary type="html">&lt;p&gt;Getting the ball rolling&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;strong&gt;Disclaimer&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;So buckle up traveler and lets get to gettin'.&lt;/h2&gt;</content><category term="Python"></category><category term="introduction"></category><category term="mindset"></category></entry><entry><title>Installing python</title><link href="/python_start.html" rel="alternate"></link><published>2019-09-08T20:00:00+01:00</published><updated>2019-09-08T20:00:00+01:00</updated><author><name>Spider</name></author><id>tag:None,2019-09-08:/python_start.html</id><summary type="html">&lt;p&gt;Getting the ball rolling&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;strong&gt;Disclaimer&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;What follows is not 100% accurate. I'm using language that makes sense to people who don't have a background in computers. I know that there are terms like "object" and "class" that are more accurate, but if you already know those terms, then this page ain't for you. Feel free to stick around though.&lt;/em&gt;&lt;/p&gt;
 &lt;h2&gt;Getting started in python&lt;/h2&gt;
 &lt;p&gt;The first thing you need to do is make sure that python is installed on your computer and up to date. There's a few ways to do this, and if you have a Mac it's already there, but your fastest bet is to install &lt;a href="https://www.anaconda.com/distribution/"&gt;anaconda&lt;/a&gt;, which installs python and a few good programs that let you write and run code. &lt;/p&gt;
@@ -20,10 +20,22 @@
 &lt;p&gt;Spyder consists of 3 seperate panes:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;The text editor, this is where you can write and edit code. &lt;/li&gt;
-&lt;li&gt;The console, where your code runs (hopefully)&lt;/li&gt;
+&lt;li&gt;The console, where your code runs (hopefully).&lt;/li&gt;
 &lt;li&gt;The 3rd pane, which does multiple things, like let you view your variables and plots, find files etc. It's a good pane, I like it. It's kinda why we're using spyder.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3&gt;The text editor.&lt;/h3&gt;
-&lt;p&gt;So, I'm going to assume that you have edited text before, you've used Word, or written a facebook post/tweet? Well in it's simplest terms the text editor is like a word page or a status box. You write in it, you can delete, jump around, copy and paste, the general texty-things. In general you want to write code in here but you can include everyday language as well when you want to explain something, but we'll get to that later. What you need to take away from this is the text editor is like Word or Pages, you write your "document" (in this case some code) and can freely edit it from there. The cool thing is that you can tell the computer to read what you have written in the text editor and take&lt;/p&gt;
+&lt;p&gt;So, I'm going to assume that you have edited text before, you've used Word, or written a facebook post/tweet? Well, in the simplest terms, the text editor is like a word page or a status box. You write in it, you can delete, jump around, copy and paste... do texty-things. In general you want to write code in here but you can include everyday language as well when you want to explain something, but we'll get to that later. What you need to take away from this is the text editor is like Word or Pages, you write your "document" (in this case some code) and can freely edit it from there. The cool thing is that you can tell the computer to read what you have written in the text editor &lt;a href="https://spider-z3r0.github.io/python.html"&gt;&lt;em&gt;as a set of instructions&lt;/em&gt;&lt;/a&gt; in the order you've written it, and the computer will do it. &lt;/p&gt;
+&lt;p&gt;You can get the computer to read the whole document from top to bottom, or to start in the middle, but really, you want to think of your text here like a story; it has a begining, a middle, and an end. You should be aiming to have it read like that with very little jumping around, once you've finished editing. &lt;/p&gt;
+&lt;p&gt;One of the first things you'll do is make things show up in the console. &lt;/p&gt;
 &lt;h3&gt;The Console.&lt;/h3&gt;
-&lt;p&gt;The console is where the magic happens. &lt;/p&gt;</content><category term="Python"></category><category term="introduction"></category><category term="variables"></category></entry></feed>
+&lt;p&gt;The console is where the magic happens. When you tell your computer to do something, the console is where your computer will tell you what's happening. So if you tell your computer to say "Hello World!", unless otherwise stated you'll see: &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;Hello World!&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;in the console. &lt;/p&gt;
+&lt;p&gt;You can also write code dierctly into the console and when you press enter the code will run, with the output appearing directly below the code you wrote. Honestly, I don't do that often because it looks messy. However, if I want to do something just once I will jump into the console. &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Hello World!&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;Hello&lt;/span&gt; &lt;span class="n"&gt;World&lt;/span&gt;&lt;span class="err"&gt;!&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</content><category term="Python"></category><category term="introduction"></category><category term="variables"></category></entry></feed>
