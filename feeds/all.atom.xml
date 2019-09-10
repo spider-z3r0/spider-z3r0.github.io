@@ -1,43 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Psython</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2019-11-08T20:00:00+00:00</updated><subtitle>Psychology, Python, PhD</subtitle><entry><title>Starting with strings</title><link href="/python_strings_1.html" rel="alternate"></link><published>2019-11-08T20:00:00+00:00</published><updated>2019-11-08T20:00:00+00:00</updated><author><name>Spider</name></author><id>tag:None,2019-11-08:/python_strings_1.html</id><summary type="html">&lt;p&gt;Stingin' em along.&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;strong&gt;Disclaimer&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;What follows is not written to be 100% accurate in all the technical detail. It is written to help people with limited knowledge of computers to get started with using python. As such, I have tried to limit jargon so if you already know terms like "object" and "class", or what a command line is, then this page ain't for you. Feel free to stick around though.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;OK, now that you have &lt;a href=""&gt;installed python and a program that lets you do python-y things&lt;/a&gt; its time to acutally....start doing python-y things. &lt;/p&gt;
-&lt;p&gt;So, we're going to start with the way that you can type normal, everyday, English into python and have it recognised as such: &lt;/p&gt;
-&lt;h2&gt;Strings!&lt;/h2&gt;
-&lt;p&gt;A string is just a collection of alphanumeric text (letters and numbers and punctuation), and it's the first example of a python &lt;strong&gt;class&lt;/strong&gt; we're meeting. Now we're not going to cover classes here, it'll become clear over time, but what you need to know right now is that a class is the general name for something that python can work with. Strings are one type of class, there are many others, and eventually you'll even be able to make your own! &lt;/p&gt;
-&lt;h3&gt;Fine Kev, get on with it!&lt;/h3&gt;
-&lt;p&gt;OK, sorry! Sorry!&lt;/p&gt;
-&lt;p&gt;I've just told you that python has a a way dealing with normal langauge, the trick is that you have wrap that text in quotes, otherwise python doesn't know what to do with it. &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Check out the apostrophies at the begining and the end of this sentence!&amp;#39;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;Boom. we have our first string! Python can read that sentence and can do stuff with it, awesome. However, let's take a look at another sentence and see if we can make a string out of it. &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Making strings is awesome, let&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="n"&gt;do&lt;/span&gt; &lt;span class="n"&gt;some&lt;/span&gt; &lt;span class="n"&gt;more&lt;/span&gt;&lt;span class="err"&gt;!&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39; &lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;See the problem? Python treats the first apostrophe as the start of the string and teh second apostrophy as the end of the string, even though it's not actually the end of the sentence. Now, we could just avoid every typing a contraction like "can't" or "didn't", and avoid Irish or Scottish surnames begining with O, but that seems like a special hell, does it not? &lt;/p&gt;
-&lt;p&gt;Fortunately there's a simple fix; when we want to enter a string that includes an apostrophie in the text we use double quotes &lt;em&gt;" "&lt;/em&gt;, standard quotation marks.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Now ain&amp;#39;t this a pretty string?&amp;quot;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;Now, you may ask yourself&lt;/p&gt;
-&lt;h3&gt;Why not just use " " every time?&lt;/h3&gt;
-&lt;p&gt;The truth is I don't know why python gives you two options for designating a line of text as a string, but one thought I had is that it's faster to type 'hi' than it is to type "hi" because the second one requires that you hold down the shift key. &lt;/p&gt;
-&lt;p&gt;There's some pretty cool things we can do with strings, but I'm gonna hold off on that for a little while. Before, we finish talking about strings though there's one last thing you should know, even though it won't come up a lot. That's how to handle strings that are more than one line long. &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="sd"&gt;&amp;#39;&amp;#39;&amp;#39;This is a multi line string, it allows me to write&lt;/span&gt;
-&lt;span class="sd"&gt;sentences that go on more than one line.&amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;To make a string that goes on more than one line you can use three apostrophies at the begining and the end &lt;em&gt;''' '''&lt;/em&gt;. This would allow you to type your magnum opus, or a delightful poem. But most frequently the strings you write are going to be pretty short so you just need apostrophies or quotation marks. There is a use for the tripple apostroie format called "docstrings" but we're a ways away from needing them, just remember that you can use them if you need to write a long string. &lt;/p&gt;
-&lt;p&gt;OK, so now that you have seen how to make strings lets do your first bit of code. Go into the console in spyder and type 'Hello World!' and then press enter. You'll see something similar to the image below. &lt;/p&gt;
-&lt;p&gt;&lt;img alt="Alt Text" src="/images/hello_world_1.png"&gt;&lt;/p&gt;
-&lt;p&gt;You just did your first thing in python!! Now granted, it wasn't very impressive... but hey, you still did it! Now to make your first error (trust me it'll be fine). Go back to the console and type Hello World, but leave out the apostrophies this time. &lt;/p&gt;
-&lt;p&gt;&lt;img alt="Alt Text" src="/images/hello_world_2.png"&gt;&lt;/p&gt;
-&lt;p&gt;And there it is! This is the first of many such errors, you'll see them often, especially when you start out, but as you progress you'll understand that they are really just a tool to make sure you get better and better. &lt;/p&gt;</content><category term="Python"></category><category term="introduction"></category><category term="strings"></category></entry><entry><title>Setting up a place to work</title><link href="/python_2.html" rel="alternate"></link><published>2019-10-08T20:00:00+01:00</published><updated>2019-10-08T20:00:00+01:00</updated><author><name>Spider</name></author><id>tag:None,2019-10-08:/python_2.html</id><summary type="html">&lt;p&gt;Getting the ball rolling&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;strong&gt;Disclaimer&lt;/strong&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Psython</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2019-09-09T20:00:00+01:00</updated><subtitle>Psychology, Python, PhD</subtitle><entry><title>Setting up a place to work</title><link href="/python_2.html" rel="alternate"></link><published>2019-09-09T20:00:00+01:00</published><updated>2019-09-09T20:00:00+01:00</updated><author><name>Spider</name></author><id>tag:None,2019-09-09:/python_2.html</id><summary type="html">&lt;p&gt;Getting the ball rolling&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;strong&gt;Disclaimer&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;What follows is not written to be 100% accurate in all the technical detail. It is written to help people with limited knowledge of computers to get started with using python. As such, I have tried to limit jargon so if you already know terms like "object" and "class", or what a command line is, then this page ain't for you. Feel free to stick around though.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;I'm assuming you've read my &lt;a href="https://spider-z3r0.github.io/python_1.html"&gt;first post on this topic&lt;/a&gt;, it's about a mindset that might be useful to you if you're new here. If you have, or you just want to get started, read on. &lt;/p&gt;
 &lt;h2&gt;Getting started in python and spyder&lt;/h2&gt;
@@ -105,7 +67,47 @@
 &lt;p&gt;With that in place you should be good and ready to start playing around in python using spyder as your playground. In the next post we'll cover the smallest bits of python that you'll come across often, integers, floats and strings. once you get used to playing with them you'll start to see the power of what you can do with code. &lt;/p&gt;
 &lt;p&gt;Kev. &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Post Script&lt;/em&gt;&lt;/strong&gt;
-&lt;em&gt;I don't really use spyder that much anymore, not because it's not cool, but because I've started using &lt;a href="https://www.sublimetext.com/"&gt;Sublime Text 3&lt;/a&gt;. There are literally loads of programs you can use, and at least twice as many opinions on which is best. When you get comfortable with what's going on in spyder maybe start playing around with other IDE's. You'll find something that suits you, and then you may find that what suits you changes. It's all good.&lt;/em&gt;&lt;/p&gt;</content><category term="Python"></category><category term="introduction"></category><category term="spyder"></category></entry><entry><title>The Mindshift.</title><link href="/python_1.html" rel="alternate"></link><published>2019-09-08T20:00:00+01:00</published><updated>2019-09-08T20:00:00+01:00</updated><author><name>Spider</name></author><id>tag:None,2019-09-08:/python_1.html</id><summary type="html">&lt;p&gt;Thinking about coding&lt;/p&gt;</summary><content type="html">&lt;p&gt;So, for some reason, you've decide decided that learning python would be a good thing to do. Great! I agree with you completely. &lt;/p&gt;
+&lt;em&gt;I don't really use spyder that much anymore, not because it's not cool, but because I've started using &lt;a href="https://www.sublimetext.com/"&gt;Sublime Text 3&lt;/a&gt;. There are literally loads of programs you can use, and at least twice as many opinions on which is best. When you get comfortable with what's going on in spyder maybe start playing around with other IDE's. You'll find something that suits you, and then you may find that what suits you changes. It's all good.&lt;/em&gt;&lt;/p&gt;</content><category term="Python"></category><category term="introduction"></category><category term="spyder"></category></entry><entry><title>Starting with strings</title><link href="/python_strings_1.html" rel="alternate"></link><published>2019-09-09T20:00:00+01:00</published><updated>2019-09-09T20:00:00+01:00</updated><author><name>Spider</name></author><id>tag:None,2019-09-09:/python_strings_1.html</id><summary type="html">&lt;p&gt;Stingin' em along.&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;strong&gt;Disclaimer&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;What follows is not written to be 100% accurate in all the technical detail. It is written to help people with limited knowledge of computers to get started with using python. As such, I have tried to limit jargon so if you already know terms like "object" and "class", or what a command line is, then this page ain't for you. Feel free to stick around though.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;OK, now that you have &lt;a href=""&gt;installed python and a program that lets you do python-y things&lt;/a&gt; its time to acutally....start doing python-y things. &lt;/p&gt;
+&lt;p&gt;So, we're going to start with the way that you can type normal, everyday, English into python and have it recognised as such: &lt;/p&gt;
+&lt;h2&gt;Strings!&lt;/h2&gt;
+&lt;p&gt;A string is just a collection of alphanumeric text (letters and numbers and punctuation), and it's the first example of a python &lt;strong&gt;class&lt;/strong&gt; we're meeting. Now we're not going to cover classes here, it'll become clear over time, but what you need to know right now is that a class is the general name for something that python can work with. Strings are one type of class, there are many others, and eventually you'll even be able to make your own! &lt;/p&gt;
+&lt;h3&gt;Fine Kev, get on with it!&lt;/h3&gt;
+&lt;p&gt;OK, sorry! Sorry!&lt;/p&gt;
+&lt;p&gt;I've just told you that python has a a way dealing with normal langauge, the trick is that you have wrap that text in quotes, otherwise python doesn't know what to do with it. &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Check out the apostrophies at the begining and the end of this sentence!&amp;#39;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Boom. we have our first string! Python can read that sentence and can do stuff with it, awesome. However, let's take a look at another sentence and see if we can make a string out of it. &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Making strings is awesome, let&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="n"&gt;do&lt;/span&gt; &lt;span class="n"&gt;some&lt;/span&gt; &lt;span class="n"&gt;more&lt;/span&gt;&lt;span class="err"&gt;!&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39; &lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;See the problem? Python treats the first apostrophe as the start of the string and teh second apostrophy as the end of the string, even though it's not actually the end of the sentence. Now, we could just avoid every typing a contraction like "can't" or "didn't", and avoid Irish or Scottish surnames begining with O, but that seems like a special hell, does it not? &lt;/p&gt;
+&lt;p&gt;Fortunately there's a simple fix; when we want to enter a string that includes an apostrophie in the text we use double quotes &lt;em&gt;" "&lt;/em&gt;, standard quotation marks.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Now ain&amp;#39;t this a pretty string?&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Now, you may ask yourself&lt;/p&gt;
+&lt;h3&gt;Why not just use " " every time?&lt;/h3&gt;
+&lt;p&gt;The truth is I don't know why python gives you two options for designating a line of text as a string, but one thought I had is that it's faster to type 'hi' than it is to type "hi" because the second one requires that you hold down the shift key. &lt;/p&gt;
+&lt;p&gt;There's some pretty cool things we can do with strings, but I'm gonna hold off on that for a little while. Before, we finish talking about strings though there's one last thing you should know, even though it won't come up a lot. That's how to handle strings that are more than one line long. &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="sd"&gt;&amp;#39;&amp;#39;&amp;#39;This is a multi line string, it allows me to write&lt;/span&gt;
+&lt;span class="sd"&gt;sentences that go on more than one line.&amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;To make a string that goes on more than one line you can use three apostrophies at the begining and the end &lt;em&gt;''' '''&lt;/em&gt;. This would allow you to type your magnum opus, or a delightful poem. But most frequently the strings you write are going to be pretty short so you just need apostrophies or quotation marks. There is a use for the tripple apostroie format called "docstrings" but we're a ways away from needing them, just remember that you can use them if you need to write a long string. &lt;/p&gt;
+&lt;p&gt;OK, so now that you have seen how to make strings lets do your first bit of code. Go into the console in spyder and type 'Hello World!' and then press enter. You'll see something similar to the image below. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="Alt Text" src="/images/hello_world_1.png"&gt;&lt;/p&gt;
+&lt;p&gt;You just did your first thing in python!! Now granted, it wasn't very impressive... but hey, you still did it! Now to make your first error (trust me it'll be fine). Go back to the console and type Hello World, but leave out the apostrophies this time. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="Alt Text" src="/images/hello_world_2.png"&gt;&lt;/p&gt;
+&lt;p&gt;And there it is! This is the first of many such errors, you'll see them often, especially when you start out, but as you progress you'll understand that they are really just a tool to make sure you get better and better. &lt;/p&gt;
+&lt;p&gt;OK so now you know what strings are, and how to make them, soon you'll doing awesome stuff with them. For right now though we're going to put strings aside, just for a minute and next we'll move onto using numbers in python. Not like crazy complicate number, just normal, everyday numbers. I promise it's easy. &lt;/p&gt;
+&lt;p&gt;Kev&lt;/p&gt;</content><category term="Python"></category><category term="introduction"></category><category term="strings"></category></entry><entry><title>The Mindshift.</title><link href="/python_1.html" rel="alternate"></link><published>2019-09-08T20:00:00+01:00</published><updated>2019-09-08T20:00:00+01:00</updated><author><name>Spider</name></author><id>tag:None,2019-09-08:/python_1.html</id><summary type="html">&lt;p&gt;Thinking about coding&lt;/p&gt;</summary><content type="html">&lt;p&gt;So, for some reason, you've decide decided that learning python would be a good thing to do. Great! I agree with you completely. &lt;/p&gt;
 &lt;p&gt;Well... of course I do or this site would be pointless... &lt;/p&gt;
 &lt;p&gt;We're going to get to the cool stuff in a minute but before we crack on I want to try to get an idea into your head that will be useful. For a lot of people nowadays, the process of using a computer, or phone, is the process of finding the right button and asking &lt;a href="https://en.wikipedia.org/wiki/Paranoia_(role-playing_game)"&gt;&lt;strong&gt;Friend Computer&lt;/strong&gt;&lt;/a&gt; to do something for you, and quite often, that's ok. &lt;/p&gt;
 &lt;p&gt;However, for people who actually work on computers learning to code allows you to take on a slightly different mindset: &lt;/p&gt;
