@@ -23,79 +23,35 @@
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="/python_2.html">Setting up a place to work</a></h1>
+                    <h1 class="entry-title"><a href="/python_strings.html">Starting with strings</a></h1>
 <footer class="post-info">
-        <span>Tue 08 October 2019</span>
-<span>| tags: <a href="/tag/python.html">Python</a><a href="/tag/introduction.html">introduction</a><a href="/tag/spyder.html">spyder</a></span>
+        <span>Fri 08 November 2019</span>
+<span>| tags: <a href="/tag/python.html">Python</a><a href="/tag/introduction.html">introduction</a><a href="/tag/strings.html">strings</a></span>
 </footer><!-- /.post-info --><p><strong>Disclaimer</strong></p>
 <p><em>What follows is not written to be 100% accurate in all the technical detail. It is written to help people with limited knowledge of computers to get started with using python. As such, I have tried to limit jargon so if you already know terms like "object" and "class", or what a command line is, then this page ain't for you. Feel free to stick around though.</em></p>
-<p>I'm assuming you've read my <a href="https://spider-z3r0.github.io/python_1.html">first post on this topic</a>, it's about a mindset that might be useful to you if you're new here. If you have, or you just want to get started, read on. </p>
-<h2>Getting started in python and spyder</h2>
-<p>The first thing you need to do is make sure that python is installed on your computer and up to date. There's a few ways to do this, and if you have a Mac it's already there, but your fastest bet is to install <a href="https://www.anaconda.com/distribution/">anaconda</a>, which installs python and a few good programs that let you write and run code. </p>
-<p>These programs are called <a href="https://www.dummies.com/programming/java/what-is-an-integrated-development-environment/"><strong>Integrated Development Environments</strong></a>, but don't worry about that right now. The short version is they let you work on projects without needing to have loads of windows open on your computer. </p>
-<p>Once you have installed anaconda, open it up and you'll be presented with a grid of different "apps" (that's not the right term but we're gonna use it here) laid out in a grid. Now, you're free to use any of these apps and there's loads of reason to use each one, but I'm going to work in spyder because... well just because. I was advised to use spyder when I started out, and although I've moved on since, I'm advising you to do the same. </p>
-<p>So click "launch" on the spyder app and away we go... </p>
-<p><img alt="Alt Text" src="/images/Spyder.png"></p>
-<p>Spyder consists of 3 seperate panes:</p>
-<ol>
-<li>The text editor, this is where you can write and edit code. </li>
-<li>The console, where your code runs (hopefully).</li>
-<li>The 3rd pane, which does multiple things, like let you view your variables and plots, find files etc. It's a good pane, I like it. It's kinda why we're using spyder.</li>
-</ol>
-<h3>The text editor.</h3>
-<p>So, I'm going to assume that you have edited text before, you've used Word, or written a facebook post/tweet? Well, in the simplest terms, the text editor is like a word page or a status box. You write in it, you can delete, jump around, copy and paste... do texty-things. In general you want to write code in here but you can include everyday language as well when you want to explain something, but we'll get to that later. What you need to take away from this is the text editor is like Word or Pages, you write your "document" (in this case some code) and can freely edit it from there. The cool thing is that you can tell the computer to read what you have written in the text editor, <a href="https://spider-z3r0.github.io/python.html"><em>as a set of instructions</em></a>, in the order you've written it, and the computer will do it. </p>
-<p>You can get the computer to read the whole document from top to bottom, or start in the middle, or just run the last bit, but really, you want to think of your code here like a story; it has a begining, a middle, and an end. You should be aiming to have it read like that with no jumping around.At least, once you've finished editing. </p>
-<p>One of the first things you'll do is make things show up in the console. </p>
-<h3>The Console.</h3>
-<p>The console is where the magic happens. When you tell your computer to do something, the console is where your computer will tell you what's happening. So if you tell your computer to say "Hello World!", unless otherwise stated you'll see: </p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>"Hello World!"</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<p>in the console. </p>
-<p>You can also write code dierctly into the console and when you press enter the code will run, with the output appearing directly below the code you wrote. Honestly, I don't do that often because it looks messy. However, if I want to do something just once I will jump into the console. </p>
-<div class="highlight"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;Hello World!&quot;</span><span class="p">)</span>
-
-<span class="o">&gt;&gt;&gt;</span><span class="n">Hello</span> <span class="n">World</span><span class="err">!</span>
+<p>OK, now that you have <a href="">installed python and a program that lets you do python-y things</a> its time to acutally....start doing python-y things. </p>
+<p>So, we're going to start with the way that you can type normal, everyday, English into python and have it recognised as such: </p>
+<h2>Strings!</h2>
+<p>A string is just a collection of alphanumeric text (letters and numbers and punctuation), and it's the first example of a python <strong>class</strong> we're meeting here. Now we're not going to cover classes here, it'll become clear over time, but what you need to know right now is that a class is the general name for something that python can work with. Strings are one type of class, there are many others, and eventually you'll even be able to make your own! </p>
+<h3>Fine Kev, get on with it!</h3>
+<p>OK, sorry! Sorry!</p>
+<p>I've just told you that python has a a way dealing with normal langauge, the trick is that you have wrap that text in quotes, otherwise python doesn't know what to do with it. </p>
+<div class="highlight"><pre><span></span><span class="s1">&#39;Check out the apostrophies at the begining and the end of this sentence!&#39;</span>
 </pre></div>
 
 
-<p>Also, if your code doesn't work for some reason the console is where you find out what went wrong by showing you an error report. In essence, this is a just a guide that tell's you what went wrong and where in your code the problem is. I'm about to show you a chunk of code that you won't understand. Don't panic.</p>
-<div class="highlight"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="n">hello</span> <span class="n">world</span><span class="p">)</span><span class="c1">#this is a bit of python code that doesn&#39;t work. </span>
-
-
-  <span class="n">File</span> <span class="s2">&quot;/Users/kevinomalley/Desktop/traceback_test.py&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">hello</span> <span class="n">world</span><span class="p">)</span>
-                    <span class="o">^</span>
-<span class="ne">SyntaxError</span><span class="p">:</span> <span class="n">invalid</span> <span class="n">syntax</span>
+<p>Boom. we have our first string! Python can read that sentence and can do stuff with it, awesome. However, let's take a look at another sentence and see if we can make a string out of it. </p>
+<div class="highlight"><pre><span></span><span class="s1">&#39;Making strings is awesome, let&#39;</span><span class="n">s</span> <span class="n">do</span> <span class="n">some</span> <span class="n">more</span><span class="err">!</span><span class="s1">&#39; </span>
 </pre></div>
 
 
-<p>Again, don't panic. At first, things like this look scary, but really all it means is there is a typo in my code (compare the two black boxes to see if you can spot the difference), and where to find it. We'll cover this more fully later on, but what I want you to take away from this is that the console is your friend:</p>
-<ol>
-<li>It is where the result of your code shows up. </li>
-<li>It can let you run a little bit of code just to check and see if it's what you want</li>
-<li>It tells you if somethings gone wrong and where to find the problem.</li>
-</ol>
-<p>Good console. Lovely console. </p>
-<h3>The 3rd pane.</h3>
-<p>The 3rd pane in spyder is basically kind of a catch all. If you need to find output the console can't handle, like a graph, it'll be in there. If you want to open a file without leaving spyder, you can use that pane. If you've saved something as a variable (we'll cover what that means later), go to the 3rd pane to check it out. </p>
-<p>The most useful bit, that is really often overlooked is the <strong>"Help"</strong> tab. Now, I'm gonna be honest with you here, at the very begining the help you get there is... not... amazing. You have to know a a fair amount of what's going on for it to be useful. That said it's worth using often, mainly because it'll get you comfortable with the jargon as you pick through what it means. To use it just highlight some text in the editor window and press control and i at the same time (command and i on a Mac) and an explanaition of the code will pop up in that box. It's something we'll touch off again a few times when we have our feet under the table a little more. </p>
-<h2>OK, now what?</h2>
-<p>What I've tried to do here is introduce you to one of the options you have for working with python, and give you a tour of what you're looking at so that it is no longer some dark world. There's a lot more going on and we'll get there, but as I've said from the outset, the point of this whole site is to take really really small steps to make you feel comfortable. </p>
-<p>What should you take away with you?</p>
-<ol>
-<li>You can write code in either the text editor or the console. For quick, small chunks the console is fine, but when it comes to writing your coding opus, or code you acctually want other people to read, that should be in the text editor.</li>
-<li>When you run code, whatever that code produces will show up in the console (for the most part). If it's an error, thats ok, they may look scary but they're actually really useful. That doesn't mean you want to see them too often, but when they show up, try not to feel bad.</li>
-<li>The 3rd pane is like a catch-all for the other stuff, either files you want to open that are somewhere else on your computer, or for the results of some code that can't go to the console (like a fancy pants scatter plot).</li>
-</ol>
-<p>With that in place you should be good and ready to start playing around in python using spyder as your playground. In the next post we'll cover the smallest bits of python that you'll come across often, integers, floats and strings. once you get used to playing with them you'll start to see the power of what you can do with code. </p>
-<p>Kev. </p>
-<p><strong><em>Post Script</em></strong>
-<em>I don't really use spyder that much anymore, not because it's not cool, but because I've started using <a href="https://www.sublimetext.com/">Sublime Text 3</a>. There are literally loads of programs you can use, and at least twice as many opinions on which is best. When you get comfortable with what's going on in spyder maybe start playing around with other IDE's. You'll find something that suits you, and then you may find that what suits you changes. It's all good.</em></p>                </article>
+<p>See the problem? Python treats the first apostrophe as the start of the string and teh second apostrophy as the end of the string, even though it's not actually the end of the sentence. Now, we could just avoid every typing a contraction like "can't" or "didn't", and avoid Irish or Scottish surnames begining with O, but that seems like a special hell, does it not? </p>
+<p>Fortunately there's a simple fix; when we want to enter a string that includes an apostrophie in the text we use double quotes <em>""</em>, standard quotation marks.</p>
+<div class="highlight"><pre><span></span><span class="s2">&quot;Now ain&#39;t this a pretty string?&quot;</span>
+</pre></div>
+
+
+<p>Why yes python, yes it is. </p>                </article>
             </aside><!-- /#featured -->
                 <section id="content" class="body">
                     <h1>Other articles</h1>
@@ -103,16 +59,16 @@
 
             <li><article class="hentry">
                 <header>
-                    <h1><a href="/python_strings.html" rel="bookmark"
-                           title="Permalink to Starting with strings">Starting with strings</a></h1>
+                    <h1><a href="/python_2.html" rel="bookmark"
+                           title="Permalink to Setting up a place to work">Setting up a place to work</a></h1>
                 </header>
 
                 <div class="entry-content">
 <footer class="post-info">
         <span>Tue 08 October 2019</span>
-<span>| tags: <a href="/tag/python.html">Python</a><a href="/tag/introduction.html">introduction</a><a href="/tag/strings.html">strings</a></span>
-</footer><!-- /.post-info -->                <p>Stingin' em along.</p>
-                <a class="readmore" href="/python_strings.html">read more</a>
+<span>| tags: <a href="/tag/python.html">Python</a><a href="/tag/introduction.html">introduction</a><a href="/tag/spyder.html">spyder</a></span>
+</footer><!-- /.post-info -->                <p>Getting the ball rolling</p>
+                <a class="readmore" href="/python_2.html">read more</a>
                 </div><!-- /.entry-content -->
             </article></li>
 
