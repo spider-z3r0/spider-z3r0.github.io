@@ -24,7 +24,7 @@
   <article>
     <header>
       <h1 class="entry-title">
-        <a href="/python_strings.html" rel="bookmark"
+        <a href="/python_strings_1.html" rel="bookmark"
            title="Permalink to Starting with strings">Starting with strings</a></h1>
     </header>
 
@@ -37,7 +37,7 @@
 <p>OK, now that you have <a href="">installed python and a program that lets you do python-y things</a> its time to acutally....start doing python-y things. </p>
 <p>So, we're going to start with the way that you can type normal, everyday, English into python and have it recognised as such: </p>
 <h2>Strings!</h2>
-<p>A string is just a collection of alphanumeric text (letters and numbers and punctuation), and it's the first example of a python <strong>class</strong> we're meeting here. Now we're not going to cover classes here, it'll become clear over time, but what you need to know right now is that a class is the general name for something that python can work with. Strings are one type of class, there are many others, and eventually you'll even be able to make your own! </p>
+<p>A string is just a collection of alphanumeric text (letters and numbers and punctuation), and it's the first example of a python <strong>class</strong> we're meeting. Now we're not going to cover classes here, it'll become clear over time, but what you need to know right now is that a class is the general name for something that python can work with. Strings are one type of class, there are many others, and eventually you'll even be able to make your own! </p>
 <h3>Fine Kev, get on with it!</h3>
 <p>OK, sorry! Sorry!</p>
 <p>I've just told you that python has a a way dealing with normal langauge, the trick is that you have wrap that text in quotes, otherwise python doesn't know what to do with it. </p>
@@ -51,12 +51,23 @@
 
 
 <p>See the problem? Python treats the first apostrophe as the start of the string and teh second apostrophy as the end of the string, even though it's not actually the end of the sentence. Now, we could just avoid every typing a contraction like "can't" or "didn't", and avoid Irish or Scottish surnames begining with O, but that seems like a special hell, does it not? </p>
-<p>Fortunately there's a simple fix; when we want to enter a string that includes an apostrophie in the text we use double quotes <em>""</em>, standard quotation marks.</p>
+<p>Fortunately there's a simple fix; when we want to enter a string that includes an apostrophie in the text we use double quotes <em>" "</em>, standard quotation marks.</p>
 <div class="highlight"><pre><span></span><span class="s2">&quot;Now ain&#39;t this a pretty string?&quot;</span>
 </pre></div>
 
 
-<p>Why yes python, yes it is. </p>
+<p>Now, you may ask yourself</p>
+<h3>Why not just use " " every time?</h3>
+<p>The truth is I don't know why python gives you two options for designating a line of text as a string, but one thought I had is that it's faster to type 'hi' than it is to type "hi" because the second one requires that you hold down the shift key. </p>
+<p>There's some pretty cool things we can do with strings, but I'm gonna hold off on that for a little while. Before, we finish talking about strings though there's one last thing you should know, even though it won't come up a lot. That's how to handle strings that are more than one line long. </p>
+<div class="highlight"><pre><span></span><span class="sd">&#39;&#39;&#39;This is a multi line string, it allows me to write</span>
+<span class="sd">sentences that go on more than one line.&#39;&#39;&#39;</span>
+</pre></div>
+
+
+<p>To make a string that goes on more than one line you can use three apostrophies at the begining and the end <em>''' '''</em>. This would allow you to type your magnum opus, or a delightful poem. But most frequently the strings you write are going to be pretty short so you just need apostrophies or quotation marks. There is a use for the tripple apostroie format called "docstrings" but we're a ways away from needing them, just remember that you can use them if you need to write a long string. </p>
+<p>OK, so now that you have seen how to make strings lets do your first bit of code. Go into the console in spyder and type 'Hello World!' and then press enter. You'll see something similar to the image below. </p>
+<p><img alt="Alt Text" src="/images/hello_world_1.png"></p>
     </div><!-- /.entry-content -->
 
   </article>
