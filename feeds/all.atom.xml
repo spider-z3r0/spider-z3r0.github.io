@@ -85,8 +85,8 @@
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;See the problem? Python treats the first apostrophe as the start of the string and teh second apostrophy as the end of the string, even though it's not actually the end of the sentence. Now, we could just avoid every typing a contraction like "can't" or "didn't", and avoid Irish or Scottish surnames begining with O, but that seems like a special hell, does it not? &lt;/p&gt;
-&lt;p&gt;Fortunately there's a simple fix; when we want to enter a string that includes an apostrophie in the text we use double quotes &lt;em&gt;" "&lt;/em&gt;, standard quotation marks.&lt;/p&gt;
+&lt;p&gt;See the problem? Python treats the first apostrophe as the start of the string and the second apostrophe as the end of the string, even though it's not actually the end of the sentence. Now, we could just avoid every typing a contraction like "can't" or "didn't", and avoid Irish or Scottish surnames begining with O, but that seems like a special hell, does it not? &lt;/p&gt;
+&lt;p&gt;Fortunately there's a simple fix; when we want to enter a string that includes an apostrophe in the text we use double quotes &lt;em&gt;" "&lt;/em&gt;, standard quotation marks.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Now ain&amp;#39;t this a pretty string?&amp;quot;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
