@@ -1,21 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Psython</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2019-09-15T20:00:00+01:00</updated><subtitle>Psychology, Python, PhD</subtitle><entry><title>Numbers in python</title><link href="/python_nums_1.html" rel="alternate"></link><published>2019-09-15T20:00:00+01:00</published><updated>2019-09-15T20:00:00+01:00</updated><author><name>Spider</name></author><id>tag:None,2019-09-15:/python_nums_1.html</id><summary type="html">&lt;p&gt;Comfortably nums.&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;strong&gt;Disclaimer&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;What follows is not written to be 100% accurate in all the technical detail. It is written to help people with limited knowledge of computers to get started with using python. As such, I have tried to limit jargon so if you already know terms like "object" and "class", or what a command line is, then this page ain't for you. Feel free to stick around though.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;You now know how to &lt;a href=""&gt;make strings like a boss&lt;/a&gt;, meaning that when it comes to typing the language you use in everyday life you have the basics under your belt. What we're moving onto now is something that comes to mind more often when people think of computers:&lt;/p&gt;
+&lt;p&gt;You now know how to &lt;a href="https://spider-z3r0.github.io/python_strings_1.html"&gt;make strings like a boss&lt;/a&gt;, meaning that when it comes to typing the language you use in everyday life you have the basics under your belt. What we're moving onto now is something that comes to mind more often when people think of computers:&lt;/p&gt;
 &lt;h2&gt;Numbers&lt;/h2&gt;
 &lt;p&gt;Don't worry, we're not getting into complex maths, we're just going get used to playing with simple numbers in python. &lt;/p&gt;
 &lt;h3&gt;Ints&lt;/h3&gt;
 &lt;p&gt;The first way that python handles numbers is as the "int" type. This is basically just a whole number like 9 or 42(hehe) or 7000000000, the way you use numbers every day as you go through your life, doing numbery things... like counting "likes"... or what ever it is you people do.&lt;/p&gt;
 &lt;h3&gt;Floats&lt;/h3&gt;
 &lt;p&gt;The other way that python works with numbers is as floating-point numbers, of the "float" type. Just like ints, floats are pretty simple, they're just numbers followed by a decimal point. So 13.333333 is a float, and so is 0.2 etc. You know the deal. &lt;/p&gt;
-&lt;h3&gt;Telling the difference&lt;/h3&gt;
+&lt;h3&gt;Strings&lt;/h3&gt;
 &lt;p&gt;Hopefully, you remember that when using normal langauge in python you use quotation marks to tell python what it is.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Like this. Python knows that this is a string.&amp;quot;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;With numbers however, python just knows what's hap'nin. This means you can just give python a number and every math instructions and python will give you back the result (again, we're taking it really slowly, you can do more than that). The usual math symbols, like + and - work just fine so lets just start there. &lt;/p&gt;
-&lt;p&gt;&lt;img alt="Alt Text" src="/images/basic_math.png"&gt;&lt;/p&gt;</content><category term="Python"></category><category term="introduction"></category><category term="numbers"></category></entry><entry><title>Setting up a place to work</title><link href="/python_2.html" rel="alternate"></link><published>2019-09-09T20:00:00+01:00</published><updated>2019-09-09T20:00:00+01:00</updated><author><name>Spider</name></author><id>tag:None,2019-09-09:/python_2.html</id><summary type="html">&lt;p&gt;Getting the ball rolling&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;strong&gt;Disclaimer&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;You can also, and hopefully this occured to you already, use numbers in your strings if you want to.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Python also knows that this 2nd sentence is a string. I could put 3 numbers in this string if I wanted!&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;This means you can write numbers into your sentences if you want to, but doing so this was means you can't do anything with those numbers. Yet! There is loads of ways you interact with strings and numbers that allow you to automate or update the numbers in a sentence, like when you need to update a report for example, and we'll get there. In the meantime just remember that there are ints, which are whole numbers, floats, numbers with decimal points, and strings, which is just using numberic symbols in normal language. &lt;/p&gt;
+&lt;h2&gt;(Really) Simple math&lt;/h2&gt;
+&lt;p&gt;So, when it comes to numbers, python will recognise a number, that isn't wrapped in quotes, as a number. This means you can just give python a number and every math instructions and python will give you back the result (again, we're taking it really slowly, you can do more than that). The usual math symbols, like + and - work just fine so lets just start there. &lt;/p&gt;
+&lt;p&gt;If you're &lt;a href="https://spider-z3r0.github.io/python_2.html"&gt;still working in Spyder&lt;/a&gt; then you can pop into the terminal and type in a simple math problem like I've shown below. Once you press enter you'll get the answer to your math problem. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; You might need to press enter twice to get python to run the math. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="Alt Text" src="/images/basic_math.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Et Voila!&lt;/em&gt; You've just done your first mathematical operation in python! Was it a small operation? Maybe, but you should be proud of yourself, it was the first of many. In the next post, we're going to cover more complex operations with numbers and strings by looking at the various 'operators', or symbols, you can use as instructions to tell python what to do. &lt;/p&gt;
+&lt;p&gt;Well done so far, keep up the good work!&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Kev&lt;/em&gt;&lt;/p&gt;</content><category term="Python"></category><category term="introduction"></category><category term="numbers"></category></entry><entry><title>Setting up a place to work</title><link href="/python_2.html" rel="alternate"></link><published>2019-09-09T20:00:00+01:00</published><updated>2019-09-09T20:00:00+01:00</updated><author><name>Spider</name></author><id>tag:None,2019-09-09:/python_2.html</id><summary type="html">&lt;p&gt;Getting the ball rolling&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;strong&gt;Disclaimer&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;What follows is not written to be 100% accurate in all the technical detail. It is written to help people with limited knowledge of computers to get started with using python. As such, I have tried to limit jargon so if you already know terms like "object" and "class", or what a command line is, then this page ain't for you. Feel free to stick around though.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;I'm assuming you've read my &lt;a href="https://spider-z3r0.github.io/python_1.html"&gt;first post on this topic&lt;/a&gt;, it's about a mindset that might be useful to you if you're new here. If you have, or you just want to get started, read on. &lt;/p&gt;
 &lt;h2&gt;Getting started in python and spyder&lt;/h2&gt;
