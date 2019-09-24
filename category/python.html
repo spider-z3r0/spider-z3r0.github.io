@@ -29,7 +29,51 @@
 <span>| tags: <a href="/tag/python.html">Python</a><a href="/tag/introduction.html">introduction</a><a href="/tag/variables.html">variables</a></span>
 </footer><!-- /.post-info --><p><strong>Disclaimer</strong></p>
 <p><em>What follows is not written to be 100% accurate in all the technical detail. It is written to help people with limited knowledge of computers to get started with using python. As such, I have tried to limit jargon so if you already know terms like "object" and "class", or what a command line is, then this page ain't for you. Feel free to stick around though.</em></p>
-<p>You now know that python handles everyday language as <a href="https://spider-z3r0.github.io/python_strings_1.html">strings</a> and that numbers can be treated as either <a href="https://spider-z3r0.github.io/python_nums_1.html">ints or floats</a>, noice! These are things you're used to working with day-to-day, at some point though, we need to start thinking about how to go beyond the everyday with python, because thats what makes programming so useful (and, frankly, so cool). From here we're going to start talking about variables. </p>                </article>
+<h1>Variables</h1>
+<p>You now know that python handles everyday language as <a href="https://spider-z3r0.github.io/python_strings_1.html">strings</a> and that numbers can be treated as either <a href="https://spider-z3r0.github.io/python_nums_1.html">ints or floats</a>, noice! What you've actually done is played with data in python for the first time, and you've already done so with 3 different <em>classes</em> of data. </p>
+<p>Data is just information, and, in very simplistic terms, coding languages like python are really good at doing stuff with information. Strings, ints, and floats are just different types of data and this means that we can perform lots of different <strong>operations</strong> (which is just a coders way of saying "do lots of things") with them. </p>
+<p>The first thing we're going to cover is called assigning variables. This just refers to the process of taking a piece of data (information) and giving it a name that python can use to quickly find and work with that data. This is really easy to do with python. </p>
+<p>Lets take a piece of text </p>
+<div class="highlight"><pre><span></span><span class="ss">&quot;When a thought of war comes, oppose it by a stronger thought of peace.&quot;</span>
+</pre></div>
+
+
+<p>that we want to work with. That sentence is a piece of data of the string class, we can assign the whole string a short name to make life easier.</p>
+<div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;When a thought of war comes, oppose it by a stronger thought of peace.&quot;</span>
+</pre></div>
+
+
+<p>The chunk of code above is simple but it packs a punch, lets walk through it. The lower case 's' at the begining is the short name (or variable) that we are giving to the string, the '=' sign is the symbol that we use to do the assignment, and the string is... well the string. To translate this into everyday speech it would read as:</p>
+<div class="highlight"><pre><span></span><span class="n">This</span> <span class="n">string</span> <span class="k">is</span> <span class="n">now</span> <span class="k">called</span> <span class="n">s</span><span class="p">.</span>
+</pre></div>
+
+
+<p>One of the things that trips people up is the grammer of the code chunk is acctually the other way around:</p>
+<div class="highlight"><pre><span></span><span class="n">s</span> <span class="k">is</span> <span class="n">the</span> <span class="n">name</span> <span class="k">of</span> <span class="n">that</span> <span class="n">string</span><span class="p">.</span>
+</pre></div>
+
+
+<p>The second version is more accurate and I've found it useful to just settle that structure in my mind:</p>
+<div class="highlight"><pre><span></span><span class="mi">1</span><span class="p">.</span> <span class="k">variable</span> <span class="n">name</span> 
+<span class="mi">2</span><span class="p">.</span> <span class="o">=</span>
+<span class="mi">3</span><span class="p">.</span> <span class="n">the</span> <span class="n">piece</span> <span class="k">of</span> <span class="k">data</span>
+</pre></div>
+
+
+<p>Lets look at another example.</p>
+<div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="mi">12</span> 
+<span class="n">a</span> <span class="o">=</span> <span class="mi">40</span> 
+<span class="n">f</span> <span class="o">=</span> <span class="n">m</span><span class="o">*</span><span class="n">a</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+</pre></div>
+
+
+<p>In the first line, we give m the value of 12. In the second line we give a the value of 40 and in the last line we give f the value of m multiplied by a. Now, the thing is, we don't need to acctually know what m and a are for this to work. Imagine we had some system that automatically fed data into python, like a digital scale and a speedometer, or a website that let users enter data. Python could recieve the data for m and a and then produce f as many times as we want. The code to do that is more complex than the chunk above, but the chunk above is a step towards getting there. </p>
+<p>So now you know how to assign a variable, and you know that strings, ints, and floats are data types that can be assigned. Next time we'll go over more complex types of data objects, and from there we'll get to doing actually work with objects. </p>
+<p>Well done so far, </p>
+<p>Hold on tight, </p>
+<p>Kev</p>                </article>
             </aside><!-- /#featured -->
                 <section id="content" class="body">
                     <h1>Other articles</h1>

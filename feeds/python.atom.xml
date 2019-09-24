@@ -1,7 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Psython - Python</title><link href="/" rel="alternate"></link><link href="/feeds/python.atom.xml" rel="self"></link><id>/</id><updated>2019-09-22T20:35:00+01:00</updated><subtitle>Psychology, Python, PhD</subtitle><entry><title>Variables.</title><link href="/python_vars_1.html" rel="alternate"></link><published>2019-09-22T20:35:00+01:00</published><updated>2019-09-22T20:35:00+01:00</updated><author><name>Spider</name></author><id>tag:None,2019-09-22:/python_vars_1.html</id><summary type="html">&lt;p&gt;Variables that vary, or not.&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;strong&gt;Disclaimer&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;What follows is not written to be 100% accurate in all the technical detail. It is written to help people with limited knowledge of computers to get started with using python. As such, I have tried to limit jargon so if you already know terms like "object" and "class", or what a command line is, then this page ain't for you. Feel free to stick around though.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;You now know that python handles everyday language as &lt;a href="https://spider-z3r0.github.io/python_strings_1.html"&gt;strings&lt;/a&gt; and that numbers can be treated as either &lt;a href="https://spider-z3r0.github.io/python_nums_1.html"&gt;ints or floats&lt;/a&gt;, noice! These are things you're used to working with day-to-day, at some point though, we need to start thinking about how to go beyond the everyday with python, because thats what makes programming so useful (and, frankly, so cool). From here we're going to start talking about variables. &lt;/p&gt;</content><category term="Python"></category><category term="introduction"></category><category term="variables"></category></entry><entry><title>Numbers in python</title><link href="/python_nums_1.html" rel="alternate"></link><published>2019-09-15T20:00:00+01:00</published><updated>2019-09-15T20:00:00+01:00</updated><author><name>Spider</name></author><id>tag:None,2019-09-15:/python_nums_1.html</id><summary type="html">&lt;p&gt;Comfortably nums.&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;strong&gt;Disclaimer&lt;/strong&gt;&lt;/p&gt;
+&lt;h1&gt;Variables&lt;/h1&gt;
+&lt;p&gt;You now know that python handles everyday language as &lt;a href="https://spider-z3r0.github.io/python_strings_1.html"&gt;strings&lt;/a&gt; and that numbers can be treated as either &lt;a href="https://spider-z3r0.github.io/python_nums_1.html"&gt;ints or floats&lt;/a&gt;, noice! What you've actually done is played with data in python for the first time, and you've already done so with 3 different &lt;em&gt;classes&lt;/em&gt; of data. &lt;/p&gt;
+&lt;p&gt;Data is just information, and, in very simplistic terms, coding languages like python are really good at doing stuff with information. Strings, ints, and floats are just different types of data and this means that we can perform lots of different &lt;strong&gt;operations&lt;/strong&gt; (which is just a coders way of saying "do lots of things") with them. &lt;/p&gt;
+&lt;p&gt;The first thing we're going to cover is called assigning variables. This just refers to the process of taking a piece of data (information) and giving it a name that python can use to quickly find and work with that data. This is really easy to do with python. &lt;/p&gt;
+&lt;p&gt;Lets take a piece of text &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;When a thought of war comes, oppose it by a stronger thought of peace.&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;that we want to work with. That sentence is a piece of data of the string class, we can assign the whole string a short name to make life easier.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;When a thought of war comes, oppose it by a stronger thought of peace.&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The chunk of code above is simple but it packs a punch, lets walk through it. The lower case 's' at the begining is the short name (or variable) that we are giving to the string, the '=' sign is the symbol that we use to do the assignment, and the string is... well the string. To translate this into everyday speech it would read as:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;This&lt;/span&gt; &lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="k"&gt;is&lt;/span&gt; &lt;span class="n"&gt;now&lt;/span&gt; &lt;span class="k"&gt;called&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;One of the things that trips people up is the grammer of the code chunk is acctually the other way around:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="k"&gt;is&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;name&lt;/span&gt; &lt;span class="k"&gt;of&lt;/span&gt; &lt;span class="n"&gt;that&lt;/span&gt; &lt;span class="n"&gt;string&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The second version is more accurate and I've found it useful to just settle that structure in my mind:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="k"&gt;variable&lt;/span&gt; &lt;span class="n"&gt;name&lt;/span&gt; 
+&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;
+&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;piece&lt;/span&gt; &lt;span class="k"&gt;of&lt;/span&gt; &lt;span class="k"&gt;data&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Lets look at another example.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;m&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;12&lt;/span&gt; 
+&lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;40&lt;/span&gt; 
+&lt;span class="n"&gt;f&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;m&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;
+
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;In the first line, we give m the value of 12. In the second line we give a the value of 40 and in the last line we give f the value of m multiplied by a. Now, the thing is, we don't need to acctually know what m and a are for this to work. Imagine we had some system that automatically fed data into python, like a digital scale and a speedometer, or a website that let users enter data. Python could recieve the data for m and a and then produce f as many times as we want. The code to do that is more complex than the chunk above, but the chunk above is a step towards getting there. &lt;/p&gt;
+&lt;p&gt;So now you know how to assign a variable, and you know that strings, ints, and floats are data types that can be assigned. Next time we'll go over more complex types of data objects, and from there we'll get to doing actually work with objects. &lt;/p&gt;
+&lt;p&gt;Well done so far, &lt;/p&gt;
+&lt;p&gt;Hold on tight, &lt;/p&gt;
+&lt;p&gt;Kev&lt;/p&gt;</content><category term="Python"></category><category term="introduction"></category><category term="variables"></category></entry><entry><title>Numbers in python</title><link href="/python_nums_1.html" rel="alternate"></link><published>2019-09-15T20:00:00+01:00</published><updated>2019-09-15T20:00:00+01:00</updated><author><name>Spider</name></author><id>tag:None,2019-09-15:/python_nums_1.html</id><summary type="html">&lt;p&gt;Comfortably nums.&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;strong&gt;Disclaimer&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;What follows is not written to be 100% accurate in all the technical detail. It is written to help people with limited knowledge of computers to get started with using python. As such, I have tried to limit jargon so if you already know terms like "object" and "class", or what a command line is, then this page ain't for you. Feel free to stick around though.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;You now know how to &lt;a href="https://spider-z3r0.github.io/python_strings_1.html"&gt;make strings like a boss&lt;/a&gt;, meaning that when it comes to typing the language you use in everyday life you have the basics under your belt. What we're moving onto now is something that comes to mind more often when people think of computers:&lt;/p&gt;
 &lt;h2&gt;Numbers&lt;/h2&gt;
