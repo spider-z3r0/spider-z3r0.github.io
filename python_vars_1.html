@@ -35,36 +35,31 @@
 </footer><!-- /.post-info -->      <p><strong>Disclaimer</strong></p>
 <p><em>What follows is not written to be 100% accurate in all the technical detail. It is written to help people with limited knowledge of computers to get started with using python. As such, I have tried to limit jargon so if you already know terms like "object" and "class", or what a command line is, then this page ain't for you. Feel free to stick around though.</em></p>
 <h1>Variables</h1>
-<p>You now know that python handles everyday language as <a href="https://spider-z3r0.github.io/python_strings_1.html">strings</a> and that numbers can be treated as either <a href="https://spider-z3r0.github.io/python_nums_1.html">ints or floats</a>, noice! What you've actually done is played with data in python for the first time, and you've already done so with 3 different <em>classes</em> of data. </p>
-<p>Data is just information, and, in very simplistic terms, coding languages like python are really good at doing stuff with information. Strings, ints, and floats are just different types of data and this means that we can perform lots of different <strong>operations</strong> (which is just a coders way of saying "do lots of things") with them. </p>
+<p>You now know that python handles everyday language as <a href="https://spider-z3r0.github.io/python_strings_1.html">strings</a> and that numbers can be treated as either <a href="https://spider-z3r0.github.io/python_nums_1.html">ints or floats</a>, noice! What you've actually done is played with data objects in python for the first time, and you've already done so with 3 different <em>classes</em> of data. </p>
+<p>Data is just information, and, in very simplistic terms, coding languages like python are really good at doing stuff with information. Strings, ints, and floats are just different types (or <em>classes</em>) of data. There are lots of other data classes but for now we're just going to stick with these basic one.</p>
 <p>The first thing we're going to cover is called assigning variables. This just refers to the process of taking a piece of data (information) and giving it a name that python can use to quickly find and work with that data. This is really easy to do with python. </p>
-<p>Lets take a piece of text </p>
+<p>Lets take a piece of text that we want to work with.</p>
 <div class="highlight"><pre><span></span><span class="ss">&quot;When a thought of war comes, oppose it by a stronger thought of peace.&quot;</span>
 </pre></div>
 
 
-<p>that we want to work with. That sentence is a piece of data of the string class, we can assign the whole string a short name to make life easier.</p>
+<p>You can also think of that sentence as a pice of information/data, or as an <em>object</em> within python. This <em>object</em> happens to be of the <em>string</em> class but that doesn't matter for right now. What matters is that you can take that whole object (everything between the quotation marks) and give it short name that you can use to refer to the entire object without having to type it all out everytime you want to do something with it. This process is called <strong>assigning to a variable</strong> and it's really really easy.</p>
 <div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;When a thought of war comes, oppose it by a stronger thought of peace.&quot;</span>
 </pre></div>
 
 
-<p>The chunk of code above is simple but it packs a punch, lets walk through it. The lower case 's' at the begining is the short name (or variable) that we are giving to the string, the '=' sign is the symbol that we use to do the assignment, and the string is... well the string. To translate this into everyday speech it would read as:</p>
-<div class="highlight"><pre><span></span><span class="n">This</span> <span class="n">string</span> <span class="k">is</span> <span class="n">now</span> <span class="k">called</span> <span class="n">s</span><span class="p">.</span>
-</pre></div>
-
-
+<p>The chunk of code above is simple but it packs a punch, lets walk through it. </p>
+<p>The lower case <strong>s</strong> at the begining is the short name (or variable) that we are giving to the string, the <strong>=</strong> sign is the symbol that we use to do the assignment, and the string is <strong>object that we are assigning</strong>. To translate this into everyday speech it would read as:</p>
+<h3>This string is now called s.</h3>
 <p>One of the things that trips people up is the grammer of the code chunk is acctually the other way around:</p>
-<div class="highlight"><pre><span></span><span class="n">s</span> <span class="k">is</span> <span class="n">the</span> <span class="n">name</span> <span class="k">of</span> <span class="n">that</span> <span class="n">string</span><span class="p">.</span>
-</pre></div>
-
-
+<h3>s is the name of that string.</h3>
 <p>The second version is more accurate and I've found it useful to just settle that structure in my mind:</p>
-<div class="highlight"><pre><span></span><span class="mi">1</span><span class="p">.</span> <span class="k">variable</span> <span class="n">name</span> 
-<span class="mi">2</span><span class="p">.</span> <span class="o">=</span>
-<span class="mi">3</span><span class="p">.</span> <span class="n">the</span> <span class="n">piece</span> <span class="k">of</span> <span class="k">data</span>
-</pre></div>
-
-
+<ol>
+<li>variable name </li>
+<li>=</li>
+<li>the piece of data</li>
+</ol>
+<hr>
 <p>Lets look at another example.</p>
 <div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="mi">12</span> 
 <span class="n">a</span> <span class="o">=</span> <span class="mi">40</span> 
@@ -74,10 +69,50 @@
 </pre></div>
 
 
-<p>In the first line, we give m the value of 12. In the second line we give a the value of 40 and in the last line we give f the value of m multiplied by a. Now, the thing is, we don't need to acctually know what m and a are for this to work. Imagine we had some system that automatically fed data into python, like a digital scale and a speedometer, or a website that let users enter data. Python could recieve the data for m and a and then produce f as many times as we want. The code to do that is more complex than the chunk above, but the chunk above is a step towards getting there. </p>
-<p>So now you know how to assign a variable, and you know that strings, ints, and floats are data types that can be assigned. Next time we'll go over more complex types of data objects, and from there we'll get to doing actually work with objects. </p>
-<p>Well done so far. </p>
-<p>Hold on tight, </p>
+<p>In the first line, we assign <strong>m</strong> the value of 12. In the second line we give <strong>a</strong> the value of 40 and in the last line we give <strong>f</strong> the value of <strong>m multiplied by a</strong>. So in this example we have assigned three objects to three variables:</p>
+<div class="highlight"><pre><span></span><span class="k">Object</span> <span class="mi">1</span><span class="p">.</span> <span class="n">the</span> <span class="nb">int</span> <span class="mi">12</span>
+<span class="k">Object</span> <span class="mi">2</span><span class="p">.</span> <span class="n">the</span> <span class="nb">int</span> <span class="mi">40</span>
+<span class="k">Object</span> <span class="mi">3</span><span class="p">.</span> <span class="n">the</span> <span class="n">product</span> <span class="k">of</span> <span class="mi">12</span> <span class="n">multiplied</span> <span class="k">by</span> <span class="mi">40</span>
+</pre></div>
+
+
+<p>Now, they are called variables because they can change, or to put it another way, the object assigned to that variable can be updated. Lets imagine that <strong>m</strong> is the mass of a car and <strong>a</strong> is its acceleration. Lets say we are getting <strong>m</strong> and <strong>a</strong> from some measurement devices that are connected to our computer, like a weighing scales for <strong>m</strong> and speedometer for <strong>a</strong>. By multiplying <strong>m</strong> and <strong>a</strong> together we get the Force the car is exherting as it travels (<strong>f</strong>). If the car speeds up or slows down <strong>a</strong> also changes, likewise if someone exits or enters the car <strong>m</strong> will change. In both cases the object is changing, or varying, which means that <strong>f</strong> is also changing, or varying.... get it? They're variables... Sorry.</p>
+<hr>
+<h2>Naming variables</h2>
+<p>You could have used pretty much any word or letter as the variable names, excluding spaces and punctuation. This means that </p>
+<div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="mi">12</span> 
+<span class="n">a</span> <span class="o">=</span> <span class="mi">40</span> 
+<span class="n">f</span> <span class="o">=</span> <span class="n">m</span><span class="o">*</span><span class="n">a</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+</pre></div>
+
+
+<p>is the same as </p>
+<div class="highlight"><pre><span></span><span class="n">banana</span> <span class="o">=</span> <span class="mi">12</span> 
+<span class="n">apple</span> <span class="o">=</span> <span class="mi">40</span> 
+<span class="n">fruit</span> <span class="o">=</span> <span class="n">m</span><span class="o">*</span><span class="n">a</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">fruit</span><span class="p">)</span>
+</pre></div>
+
+
+<p>However you can use <strong>_</strong> (underscores) and you're encouraged to do so.</p>
+<div class="highlight"><pre><span></span><span class="n">car_mass</span> <span class="o">=</span> <span class="mi">12</span> 
+<span class="n">car_acceleration</span> <span class="o">=</span> <span class="mi">40</span> 
+<span class="n">car_force</span> <span class="o">=</span> <span class="n">m</span><span class="o">*</span><span class="n">a</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">car_force</span><span class="p">)</span>
+</pre></div>
+
+
+<p>It's best to use simple and informative names and to be consistent in your naming convention. Without going into why, python users tend to prefer using underscores when linking words together and to balance brevity with clarity so that 'car_accel' might be better than 'car_acceleration' because the later is cumbersome to type, although personally, I think both options need work. As you get more practice in you will develop a taste for how you like to name variables. </p>
+<hr>
+<p>So now you know how to assign a variable, and you know that strings, ints, and floats are data types that can be assigned. Next time we'll go over more complex types of data objects, and from there we'll get to doing actually work with objects. If you want to read into this more then <a href="https://realpython.com/python-variables/">this page</a> on the real python website will give you more detail on what was covered in this post.</p>
+<p>If you want to, you could practice assigning some variables and printing them in Spyder. Assign a variable, press enter the type 'print(your variable)' and press enter again. Do this to your heart's content, try reusing the same name a few times and seen what happens when you print the variable after change it.</p>
+<p>Well done! Thats another basic concept covered, give yourself a pat on the back. </p>
+<p>Next time we are going to cover what that 'print()' thing is and how you can use things like it in your own code. I think you'll really like it. </p>
+<p>See you then,</p>
 <p>Kev</p>
     </div><!-- /.entry-content -->
 
