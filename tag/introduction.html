@@ -27,7 +27,83 @@
 <footer class="post-info">
         <span>Fri 04 October 2019</span>
 <span>| tags: <a href="/tag/python.html">Python</a><a href="/tag/introduction.html">introduction</a><a href="/tag/lists.html">lists</a></span>
-</footer><!-- /.post-info -->                </article>
+</footer><!-- /.post-info --><p><strong>Disclaimer</strong></p>
+<p><em>What follows is not written to be 100% accurate in all the technical detail. It is written to help people with limited knowledge of computers to get started with using python. As such, I have tried to limit jargon so if you already know terms like "object" and "class", or what a command line is, then this page ain't for you. Feel free to stick around though.</em></p>
+<p>In <a href="https://spider-z3r0.github.io/python_vars_1.html">the last post</a> we talked about assigning information (data) to a variable (a short name) that python can use, and that is often easier to type. So this allows us to take a long piece of data like</p>
+<div class="highlight"><pre><span></span><span class="s2">&quot;Let each morn be better than its eve and each morrow richer than its yesterday.&quot;</span>
+</pre></div>
+
+
+<p>and store it in a variable</p>
+<div class="highlight"><pre><span></span><span class="n">morn</span> <span class="o">=</span> <span class="s1">&#39;Let each morn be better than its eve and each morrow richer than its yesterday.&#39;</span>
+</pre></div>
+
+
+<p>Whats cool about this is it allows us to call and work with that variable rapidly</p>
+<div class="highlight"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="n">morn</span><span class="p">)</span>
+
+<span class="s1">&#39;Let each morn be better than its eve and each morrow richer than its yesterday.&#39;</span>
+</pre></div>
+
+
+<p>That is basically a means of storing data in python, if you have been paying attention you probably suspect that there's more, you're very smart. </p>
+<h1>Lists</h1>
+<p>Lists are a cool and simple to store multiple pieces of data in python in a neat way. This is useful for a few reasons.</p>
+<div class="highlight"><pre><span></span><span class="mi">1</span><span class="p">.</span> <span class="n">It</span> <span class="n">gives</span> <span class="n">us</span> <span class="n">quick</span> <span class="k">access</span> <span class="k">to</span> <span class="n">variables</span><span class="p">.</span>
+<span class="mi">2</span><span class="p">.</span> <span class="n">It</span> <span class="n">helps</span> <span class="k">to</span> <span class="n">keep</span> <span class="n">our</span> <span class="n">code</span> <span class="n">tidy</span><span class="p">.</span>
+<span class="mi">3</span><span class="p">.</span> <span class="n">It</span> <span class="k">is</span> <span class="n">one</span> <span class="k">of</span> <span class="n">the</span> <span class="n">ways</span> <span class="n">we</span> <span class="n">can</span> <span class="n">automate</span> <span class="n">operations</span> <span class="k">on</span> <span class="n">multiple</span> <span class="n">variables</span> <span class="n">rapidly</span> <span class="p">(</span><span class="n">we</span><span class="err">&#39;</span><span class="n">ll</span> <span class="n">cover</span> <span class="n">this</span> <span class="n">later</span> <span class="k">on</span><span class="p">).</span>
+<span class="mi">4</span><span class="p">.</span> <span class="n">It</span> <span class="n">can</span> <span class="n">store</span> <span class="n">variables</span> <span class="k">of</span> <span class="n">different</span> <span class="k">data</span> <span class="n">types</span><span class="p">,</span> <span class="n">ints</span><span class="p">,</span> <span class="n">strings</span><span class="p">,</span> <span class="n">etc</span><span class="p">.</span>
+</pre></div>
+
+
+<p>Making lists in python is really easy; just surround it in square brackets "[]"!</p>
+<div class="highlight"><pre><span></span><span class="n">age</span> <span class="o">=</span> <span class="mi">29</span>
+<span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;jean&#39;</span>
+<span class="n">occupation</span> <span class="o">=</span> <span class="s1">&#39;lecturer&#39;</span>
+<span class="n">height</span> <span class="o">=</span> <span class="mf">1.75</span>
+
+<span class="p">[</span><span class="n">age</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">occupation</span><span class="p">,</span> <span class="n">height</span><span class="p">]</span><span class="c1">#this bit is the list</span>
+</pre></div>
+
+
+<p>See how easy that was? First we open our square brackets, then we add our variables with each one being seperated by a coma. The coma is important, without it list won't work for you so make sure you are paying attention when you make a list. </p>
+<h2>Lists are also data</h2>
+<p>Another cool thing is that a list is also a piece of data, which means a whole list can be assigned to a variable just like a string of int. </p>
+<div class="highlight"><pre><span></span><span class="n">age</span> <span class="o">=</span> <span class="mi">29</span>
+<span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;jean&#39;</span>
+<span class="n">occupation</span> <span class="o">=</span> <span class="s1">&#39;lecturer&#39;</span>
+<span class="n">height</span> <span class="o">=</span> <span class="mf">1.75</span>
+
+<span class="n">l</span> <span class="o">=</span> <span class="p">[</span><span class="n">age</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">occupation</span><span class="p">,</span> <span class="n">height</span><span class="p">]</span>
+</pre></div>
+
+
+<p>In the above chunk we have taken all our variables, assigned them to a list <em>and also assigned the list itself to a variable</em>. We can do that because a <strong>list is also a datatype in python</strong>! Take a second to think about what that means. </p>
+<p>OK, you got it? </p>
+<p>It means that we can also store a list inside another list! We can make a list... <em>of lists</em>!</p>
+<div class="highlight"><pre><span></span><span class="n">age</span> <span class="o">=</span> <span class="mi">29</span>
+<span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;jean&#39;</span>
+<span class="n">occupation</span> <span class="o">=</span> <span class="s1">&#39;lecturer&#39;</span>
+
+
+<span class="n">l1</span> <span class="o">=</span> <span class="p">[</span><span class="n">age</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">occupation</span><span class="p">,</span> <span class="n">height</span><span class="p">]</span>
+
+<span class="n">eye</span> <span class="o">=</span> <span class="s1">&#39;blue/grey&#39;</span>
+<span class="n">hair</span> <span class="o">=</span> <span class="s1">&#39;red&#39;</span>
+<span class="n">height</span> <span class="o">=</span> <span class="mf">1.75</span>
+
+<span class="n">l2</span> <span class="o">=</span> <span class="p">[</span><span class="n">eye</span><span class="p">,</span> <span class="n">hair</span><span class="p">,</span> <span class="n">height</span><span class="p">]</span>
+
+
+<span class="n">l3</span> <span class="o">=</span> <span class="p">[</span><span class="n">l1</span><span class="p">,</span> <span class="n">l2</span><span class="p">]</span><span class="c1">#a list of lists </span>
+</pre></div>
+
+
+<p>Lists seem simple, and that's mainly because they are. Simple but powerful. I'm aware that thier power is probably not overly clear right now but I promise it shall all become clear when we start to look at things like automating actions. For right now, all you need to take with you is that a list is just what it sounds like, a collection of data packed into a single item. That item can also be assigned to a variable and can then be stored inside a list itself. </p>
+<p>Its not a complicated thing but it'll be really useful to you as you progress. </p>
+<p>You're doing excelent so far, and the next post will be the last of the datatypes we're going to cover (for a while) and once thats covered we'll look at the first of our python actions, namely <em>indexing</em>. </p>
+<p>See you then, </p>
+<p>Kev.</p>                </article>
             </aside><!-- /#featured -->
                 <section id="content" class="body">
                     <h1>Other articles</h1>

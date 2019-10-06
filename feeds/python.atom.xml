@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Psython - Python</title><link href="/" rel="alternate"></link><link href="/feeds/python.atom.xml" rel="self"></link><id>/</id><updated>2019-10-04T20:00:00+01:00</updated><subtitle>Psychology, Python, PhD</subtitle><entry><title>Learning lists</title><link href="/python_lists_1.html" rel="alternate"></link><published>2019-10-04T20:00:00+01:00</published><updated>2019-10-04T20:00:00+01:00</updated><author><name>Spider</name></author><id>tag:None,2019-10-04:/python_lists_1.html</id><summary type="html">&lt;p&gt;Lists, the first of many.&lt;/p&gt;</summary><content type="html"></content><category term="Python"></category><category term="introduction"></category><category term="lists"></category></entry><entry><title>Python contents</title><link href="/python_home.html" rel="alternate"></link><published>2019-09-25T20:37:00+01:00</published><updated>2019-09-25T20:37:00+01:00</updated><author><name>Spider</name></author><id>tag:None,2019-09-25:/python_home.html</id><summary type="html">&lt;p&gt;Index of python articles&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Forward&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Psython - Python</title><link href="/" rel="alternate"></link><link href="/feeds/python.atom.xml" rel="self"></link><id>/</id><updated>2019-10-06T20:37:00+01:00</updated><subtitle>Psychology, Python, PhD</subtitle><entry><title>Python contents</title><link href="/python_home.html" rel="alternate"></link><published>2019-10-06T20:37:00+01:00</published><updated>2019-10-06T20:37:00+01:00</updated><author><name>Spider</name></author><id>tag:None,2019-10-06:/python_home.html</id><summary type="html">&lt;p&gt;Index of python articles&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Forward&lt;/h1&gt;
 &lt;p&gt;Welcome to my series of python articles for &lt;strong&gt;absolute beginers&lt;/strong&gt;. The articles below are designed to help people with no experience (other than using a computer) to get started with programming, and particularly with python. They are written with the aim of helping people coming from a social science background to transition  away from programs like SPSS and MS Excel and so a lot of the examples are childishly simple, especially in the earlier articles. &lt;/p&gt;
 &lt;p&gt;If you are new to python, I'm sure you will enjoy the journey. Just be patient and remember that its OK if you need a few tutorials, from a few different sources, before something clicks. Sometimes you have hear the same thing said multiple different ways before it perculates down into your head. If you find that my explanaitions don't work for you I can really hightly recomend &lt;a href="https://www.youtube.com/playlist?list=PLBZBJbE_rGRWeh5mIBhD-hhDwSEDxogDg"&gt;these youtube tutorials&lt;/a&gt; and &lt;a href="https://nostarch.com/pythoncrashcourse2e"&gt;this book&lt;/a&gt;. They really helped me advance when I was just starting out. &lt;/p&gt;
 &lt;p&gt;If you're a seasoned python data scientist, then please look on this site with a kind eye, my aim has been to break everything down so that nothing is taken for granted or assumed because I found that people who are good at coding tend to take a lot for granted when teaching new people. This can be really disheartening and leave new folk feeling like they will never progress without a comp-sci degree and a background in building linux systems. &lt;/p&gt;
@@ -20,11 +20,90 @@
 &lt;li&gt;
 &lt;p&gt;&lt;a href="https://spider-z3r0.github.io/python_vars_1.html"&gt;&lt;strong&gt;Python Variables&lt;/strong&gt;&lt;/a&gt;. Now that we have a few data classes under our belt, we can start to think about assigning information, like strings or numbers, to python &lt;em&gt;variables&lt;/em&gt;. &lt;/p&gt;
 &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://spider-z3r0.github.io/python_lists_1.html"&gt;&lt;strong&gt;Lists&lt;/strong&gt;&lt;/a&gt;. Lists are a way of storing multiple pieces of information in a single object that python. &lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;p&gt;Check back soon for more beginers python posts. &lt;/p&gt;
 &lt;p&gt;Hold on tight, you got this!&lt;/p&gt;
-&lt;p&gt;Kev&lt;/p&gt;</content><category term="Python"></category><category term="Contents"></category></entry><entry><title>Variables.</title><link href="/python_vars_1.html" rel="alternate"></link><published>2019-09-22T20:35:00+01:00</published><updated>2019-09-22T20:35:00+01:00</updated><author><name>Spider</name></author><id>tag:None,2019-09-22:/python_vars_1.html</id><summary type="html">&lt;p&gt;Variables that vary, or not.&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;strong&gt;Disclaimer&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Kev&lt;/p&gt;</content><category term="Python"></category><category term="Contents"></category></entry><entry><title>Learning lists</title><link href="/python_lists_1.html" rel="alternate"></link><published>2019-10-04T20:00:00+01:00</published><updated>2019-10-04T20:00:00+01:00</updated><author><name>Spider</name></author><id>tag:None,2019-10-04:/python_lists_1.html</id><summary type="html">&lt;p&gt;Lists, the first of many.&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;strong&gt;Disclaimer&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;What follows is not written to be 100% accurate in all the technical detail. It is written to help people with limited knowledge of computers to get started with using python. As such, I have tried to limit jargon so if you already know terms like "object" and "class", or what a command line is, then this page ain't for you. Feel free to stick around though.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;In &lt;a href="https://spider-z3r0.github.io/python_vars_1.html"&gt;the last post&lt;/a&gt; we talked about assigning information (data) to a variable (a short name) that python can use, and that is often easier to type. So this allows us to take a long piece of data like&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Let each morn be better than its eve and each morrow richer than its yesterday.&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;and store it in a variable&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;morn&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Let each morn be better than its eve and each morrow richer than its yesterday.&amp;#39;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Whats cool about this is it allows us to call and work with that variable rapidly&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;morn&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="s1"&gt;&amp;#39;Let each morn be better than its eve and each morrow richer than its yesterday.&amp;#39;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;That is basically a means of storing data in python, if you have been paying attention you probably suspect that there's more, you're very smart. &lt;/p&gt;
+&lt;h1&gt;Lists&lt;/h1&gt;
+&lt;p&gt;Lists are a cool and simple to store multiple pieces of data in python in a neat way. This is useful for a few reasons.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="n"&gt;It&lt;/span&gt; &lt;span class="n"&gt;gives&lt;/span&gt; &lt;span class="n"&gt;us&lt;/span&gt; &lt;span class="n"&gt;quick&lt;/span&gt; &lt;span class="k"&gt;access&lt;/span&gt; &lt;span class="k"&gt;to&lt;/span&gt; &lt;span class="n"&gt;variables&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
+&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="n"&gt;It&lt;/span&gt; &lt;span class="n"&gt;helps&lt;/span&gt; &lt;span class="k"&gt;to&lt;/span&gt; &lt;span class="n"&gt;keep&lt;/span&gt; &lt;span class="n"&gt;our&lt;/span&gt; &lt;span class="n"&gt;code&lt;/span&gt; &lt;span class="n"&gt;tidy&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
+&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="n"&gt;It&lt;/span&gt; &lt;span class="k"&gt;is&lt;/span&gt; &lt;span class="n"&gt;one&lt;/span&gt; &lt;span class="k"&gt;of&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;ways&lt;/span&gt; &lt;span class="n"&gt;we&lt;/span&gt; &lt;span class="n"&gt;can&lt;/span&gt; &lt;span class="n"&gt;automate&lt;/span&gt; &lt;span class="n"&gt;operations&lt;/span&gt; &lt;span class="k"&gt;on&lt;/span&gt; &lt;span class="n"&gt;multiple&lt;/span&gt; &lt;span class="n"&gt;variables&lt;/span&gt; &lt;span class="n"&gt;rapidly&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;we&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;ll&lt;/span&gt; &lt;span class="n"&gt;cover&lt;/span&gt; &lt;span class="n"&gt;this&lt;/span&gt; &lt;span class="n"&gt;later&lt;/span&gt; &lt;span class="k"&gt;on&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;
+&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="n"&gt;It&lt;/span&gt; &lt;span class="n"&gt;can&lt;/span&gt; &lt;span class="n"&gt;store&lt;/span&gt; &lt;span class="n"&gt;variables&lt;/span&gt; &lt;span class="k"&gt;of&lt;/span&gt; &lt;span class="n"&gt;different&lt;/span&gt; &lt;span class="k"&gt;data&lt;/span&gt; &lt;span class="n"&gt;types&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;ints&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;strings&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;etc&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Making lists in python is really easy; just surround it in square brackets "[]"!&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;age&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;29&lt;/span&gt;
+&lt;span class="n"&gt;name&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;jean&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;occupation&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;lecturer&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;height&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mf"&gt;1.75&lt;/span&gt;
+
+&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;age&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;occupation&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;height&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="c1"&gt;#this bit is the list&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;See how easy that was? First we open our square brackets, then we add our variables with each one being seperated by a coma. The coma is important, without it list won't work for you so make sure you are paying attention when you make a list. &lt;/p&gt;
+&lt;h2&gt;Lists are also data&lt;/h2&gt;
+&lt;p&gt;Another cool thing is that a list is also a piece of data, which means a whole list can be assigned to a variable just like a string of int. &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;age&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;29&lt;/span&gt;
+&lt;span class="n"&gt;name&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;jean&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;occupation&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;lecturer&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;height&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mf"&gt;1.75&lt;/span&gt;
+
+&lt;span class="n"&gt;l&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;age&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;occupation&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;height&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;In the above chunk we have taken all our variables, assigned them to a list &lt;em&gt;and also assigned the list itself to a variable&lt;/em&gt;. We can do that because a &lt;strong&gt;list is also a datatype in python&lt;/strong&gt;! Take a second to think about what that means. &lt;/p&gt;
+&lt;p&gt;OK, you got it? &lt;/p&gt;
+&lt;p&gt;It means that we can also store a list inside another list! We can make a list... &lt;em&gt;of lists&lt;/em&gt;!&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;age&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;29&lt;/span&gt;
+&lt;span class="n"&gt;name&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;jean&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;occupation&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;lecturer&amp;#39;&lt;/span&gt;
+
+
+&lt;span class="n"&gt;l1&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;age&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;occupation&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;height&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+
+&lt;span class="n"&gt;eye&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;blue/grey&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;hair&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;red&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;height&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mf"&gt;1.75&lt;/span&gt;
+
+&lt;span class="n"&gt;l2&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;eye&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;hair&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;height&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+
+
+&lt;span class="n"&gt;l3&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;l1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;l2&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="c1"&gt;#a list of lists &lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Lists seem simple, and that's mainly because they are. Simple but powerful. I'm aware that thier power is probably not overly clear right now but I promise it shall all become clear when we start to look at things like automating actions. For right now, all you need to take with you is that a list is just what it sounds like, a collection of data packed into a single item. That item can also be assigned to a variable and can then be stored inside a list itself. &lt;/p&gt;
+&lt;p&gt;Its not a complicated thing but it'll be really useful to you as you progress. &lt;/p&gt;
+&lt;p&gt;You're doing excelent so far, and the next post will be the last of the datatypes we're going to cover (for a while) and once thats covered we'll look at the first of our python actions, namely &lt;em&gt;indexing&lt;/em&gt;. &lt;/p&gt;
+&lt;p&gt;See you then, &lt;/p&gt;
+&lt;p&gt;Kev.&lt;/p&gt;</content><category term="Python"></category><category term="introduction"></category><category term="lists"></category></entry><entry><title>Variables.</title><link href="/python_vars_1.html" rel="alternate"></link><published>2019-09-22T20:35:00+01:00</published><updated>2019-09-22T20:35:00+01:00</updated><author><name>Spider</name></author><id>tag:None,2019-09-22:/python_vars_1.html</id><summary type="html">&lt;p&gt;Variables that vary, or not.&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;strong&gt;Disclaimer&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;What follows is not written to be 100% accurate in all the technical detail. It is written to help people with limited knowledge of computers to get started with using python. As such, I have tried to limit jargon so if you already know terms like "object" and "class", or what a command line is, then this page ain't for you. Feel free to stick around though.&lt;/em&gt;&lt;/p&gt;
 &lt;h1&gt;Variables&lt;/h1&gt;
 &lt;p&gt;You now know that python handles everyday language as &lt;a href="https://spider-z3r0.github.io/python_strings_1.html"&gt;strings&lt;/a&gt; and that numbers can be treated as either &lt;a href="https://spider-z3r0.github.io/python_nums_1.html"&gt;ints or floats&lt;/a&gt;, noice! What you've actually done is played with data objects in python for the first time, and you've already done so with 3 different &lt;em&gt;classes&lt;/em&gt; of data. &lt;/p&gt;
